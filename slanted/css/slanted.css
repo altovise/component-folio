@@ -1,0 +1,22 @@
+.slantedDiv {
+  position: relative;
+  width: 20%;
+  height: 500px;
+  background: transparent;
+  margin: 0 20px 20px 0;
+  float: left;
+}
+
+.slantedDiv:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #ffc728;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: skew(-25deg);
+  z-index: 1;
+}
